@@ -29,4 +29,8 @@ spec:
   containers: 
   - name: with-pod-affinity 
     image: registry.k8s.io/pause:3.8 
-  
+  tolarations: 
+  - key: "hardware"
+    operator: "Equal"
+    value: "gpu"
+    effect: "NoExecute"
