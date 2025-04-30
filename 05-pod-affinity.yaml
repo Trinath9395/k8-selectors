@@ -18,11 +18,11 @@ metadata:
 spec: 
   affinity: 
     podAffinity: 
-      requiredDuringSchedulingIgnoreDuringExecution: 
+      requiredDuringSchedulingIgnoredDuringExecution:
       - labelSelector: 
           matchExpressions: 
-          - key: 
-            operator: app-name 
+          - key: app-name
+            operator: In
             values: 
             - pod-1
         topologyKey: topology.kubernetes.io/zone 
