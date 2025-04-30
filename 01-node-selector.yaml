@@ -8,6 +8,7 @@ spec:
   nodeSelector:
     topology.kuberntes.io/zone: us-east-1a
   containers:
-  - image: nginx
-    name: nginx
+  - name: nginx 
+    image: nginx 
+
   
