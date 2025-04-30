@@ -29,7 +29,7 @@ spec:
   containers: 
   - name: with-pod-affinity 
     image: registry.k8s.io/pause:3.8 
-  tolarations: 
+  tolerations: 
   - key: "hardware"
     operator: "Equal"
     value: "gpu"
